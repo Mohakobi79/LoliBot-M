@@ -103,7 +103,7 @@ const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${a
 await conn.sendFile(m.chat, json.data.data[0].url, 'igdl.mp4', `🔗 *Url:* ${shortUrl1}`, m, null, fake)
 await m.react('✅')
 } catch (e) {
-await m.react('❌')
+await m.react('')
 console.log(e) 
 }}
 handler.help = ['instagram *<link ig>*']
